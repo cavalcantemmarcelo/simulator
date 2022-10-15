@@ -29,6 +29,12 @@ h1 {
         width: 400px;
         height: auto;
         margin: 10px 10px;
+
+        &:hover {
+            opacity: 75%;
+            border: 1px solid black;
+            cursor: pointer;
+        }
     }
 
 }
