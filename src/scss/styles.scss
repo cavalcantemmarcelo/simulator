@@ -3,8 +3,6 @@ $color-bg-default: #33f;
 $font-default: Arial, Helvetica, sans-serif;
 
 body {
-    background: url('../assets/background.jpg') no-repeat top center;
-    background-size: cover;
     font-family: $font-default;
     margin: 0;
 }
@@ -12,17 +10,25 @@ body {
 h1 {
     color: $color-font;
     text-align: center;
-    width: 100%;
+    margin: 0 auto;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    display: block;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 20px auto;
+    padding: 20px;
     
     img {
-        width: 100%;
+        width: 400px;
         height: auto;
+        margin: 10px 10px;
     }
 
 }
